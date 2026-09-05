@@ -1,0 +1,2 @@
+{"query_id":"sample-001","query":"무선 이어폰","expected":{"intent":"product_search","relevant_categories":["이어폰"]},"privacy":"synthetic"}
+{"query_id":"sample-002","query":"냉장고 4도어","expected":{"intent":"product_search","required_attributes":["4도어"]},"privacy":"synthetic"}

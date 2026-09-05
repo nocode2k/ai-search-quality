@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/diagnosis-result.schema.json",
+  "title": "Search Quality Diagnosis Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "query_id",
+    "diagnoser",
+    "reason_code",
+    "evidence",
+    "confidence",
+    "suggested_action",
+    "requires_human_review"
+  ],
+  "properties": {
+    "query_id": { "type": "string", "minLength": 1 },
+    "diagnoser": {
+      "type": "string",
+      "enum": ["query_quality", "result_relevance", "term_understanding", "boosting"]
+    },
+    "reason_code": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]+$" },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "suggested_action": { "type": "string", "minLength": 1 },
+    "requires_human_review": { "const": true },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": { "type": "number" }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}
