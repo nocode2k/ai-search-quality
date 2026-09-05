@@ -10,3 +10,5 @@ build/
 *.log
 secrets/
 private-data/
+__pycache__/
+*.py[cod]
