@@ -1,0 +1,40 @@
+{"query_id":"q001","query":"호텔김치","segment":"exact_product","signals":{"exact_match_rank":4,"semantic_rank":1,"popularity_override":true},"expected_reason_codes":["EXACT_MATCH_DEMOTED","POPULARITY_OVERBOOST"],"privacy":"synthetic"}
+{"query_id":"q002","query":"셀렙샵에디션","segment":"brand","signals":{"brand_result_count":0,"tokenized_terms":["셀렙샵","에디션"]},"expected_reason_codes":["BRAND_RECALL_MISS","ENTITY_SPLIT"],"privacy":"synthetic"}
+{"query_id":"q003","query":"오로바일렌 올리브오일","segment":"exact_product","signals":{"exact_match_rank":1},"expected_reason_codes":[],"privacy":"synthetic"}
+{"query_id":"q004","query":"로보락 s10 max ultra","segment":"exact_product","signals":{"exact_match_rank":1},"expected_reason_codes":[],"privacy":"synthetic"}
+{"query_id":"q005","query":"삼성 75인치 미니LED TV","segment":"brand_attribute","signals":{"exact_match_rank":7,"semantic_rank":2},"expected_reason_codes":["EXACT_MATCH_DEMOTED"],"privacy":"synthetic"}
+{"query_id":"q006","query":"여성 가죽 토트백","segment":"attribute","signals":{"irrelevant_ratio_at_10":0.4},"expected_reason_codes":["LOW_PRECISION_AT_10"],"privacy":"synthetic"}
+{"query_id":"q007","query":"남성 여름 골프바지","segment":"attribute","signals":{"missing_attributes":["남성","여름"]},"expected_reason_codes":["ATTRIBUTE_RECALL_MISS"],"privacy":"synthetic"}
+{"query_id":"q008","query":"4도어 냉장고 800리터","segment":"attribute","signals":{"missing_attributes":["800리터"]},"expected_reason_codes":["ATTRIBUTE_RECALL_MISS"],"privacy":"synthetic"}
+{"query_id":"q009","query":"직배수 없는 로봇청소기","segment":"negative_constraint","signals":{"negative_constraint_violations":3},"expected_reason_codes":["NEGATIVE_CONSTRAINT_VIOLATION"],"privacy":"synthetic"}
+{"query_id":"q010","query":"무향 저자극 선크림","segment":"attribute","signals":{"irrelevant_ratio_at_10":0.1},"expected_reason_codes":[],"privacy":"synthetic"}
+{"query_id":"q011","query":"부모님 선물 건강식품","segment":"natural_language","signals":{"intent_confidence":0.52},"expected_reason_codes":["AMBIGUOUS_INTENT"],"privacy":"synthetic"}
+{"query_id":"q012","query":"출근할 때 입기 좋은 가을 재킷","segment":"natural_language","signals":{"intent_confidence":0.86},"expected_reason_codes":[],"privacy":"synthetic"}
+{"query_id":"q013","query":"관리 편한 로봇청소기","segment":"natural_language","signals":{"missing_attributes":["자동세척"]},"expected_reason_codes":["ATTRIBUTE_RECALL_MISS"],"privacy":"synthetic"}
+{"query_id":"q014","query":"아이와 먹기 좋은 저염 김치","segment":"natural_language","signals":{"negative_constraint_violations":2},"expected_reason_codes":["NEGATIVE_CONSTRAINT_VIOLATION"],"privacy":"synthetic"}
+{"query_id":"q015","query":"리뷰 좋은 출근용 운동화","segment":"natural_language","signals":{"popularity_override":true},"expected_reason_codes":["POPULARITY_OVERBOOST"],"privacy":"synthetic"}
+{"query_id":"q016","query":"패딩","segment":"synonym","signals":{"synonym_missing":true},"expected_reason_codes":["SYNONYM_GAP"],"privacy":"synthetic"}
+{"query_id":"q017","query":"다운점퍼","segment":"synonym","signals":{"synonym_missing":false},"expected_reason_codes":[],"privacy":"synthetic"}
+{"query_id":"q018","query":"스니커즈","segment":"synonym","signals":{"synonym_missing":true},"expected_reason_codes":["SYNONYM_GAP"],"privacy":"synthetic"}
+{"query_id":"q019","query":"핸드폰 케이스","segment":"synonym","signals":{"synonym_missing":true},"expected_reason_codes":["SYNONYM_GAP"],"privacy":"synthetic"}
+{"query_id":"q020","query":"간절기 자켓","segment":"season","signals":{"normalized_query":"가을 자켓"},"expected_reason_codes":["NORMALIZATION_REQUIRED"],"privacy":"synthetic"}
+{"query_id":"q021","query":"여성운동화","segment":"spacing","signals":{"normalized_query":"여성 운동화"},"expected_reason_codes":["NORMALIZATION_REQUIRED"],"privacy":"synthetic"}
+{"query_id":"q022","query":"나이키운동화남성","segment":"spacing","signals":{"normalized_query":"나이키 운동화 남성"},"expected_reason_codes":["NORMALIZATION_REQUIRED"],"privacy":"synthetic"}
+{"query_id":"q023","query":"ㅇㅣㅂㅅㄹㄹ","segment":"jamo_typo","signals":{"query_quality":"invalid_jamo"},"expected_reason_codes":["MALFORMED_QUERY"],"privacy":"synthetic"}
+{"query_id":"q024","query":"올리브영ㅇ","segment":"typo","signals":{"query_quality":"trailing_jamo"},"expected_reason_codes":["MALFORMED_QUERY"],"privacy":"synthetic"}
+{"query_id":"q025","query":"뉴발란스 운동화","segment":"brand","signals":{"brand_result_count":12},"expected_reason_codes":[],"privacy":"synthetic"}
+{"query_id":"q026","query":"봄 원피스","segment":"season","signals":{"irrelevant_ratio_at_10":0.5},"expected_reason_codes":["LOW_PRECISION_AT_10"],"privacy":"synthetic"}
+{"query_id":"q027","query":"레드와인 비니거","segment":"false_color","signals":{"tokenized_terms":["레드","와인","비니거"]},"expected_reason_codes":["ENTITY_SPLIT"],"privacy":"synthetic"}
+{"query_id":"q028","query":"블루종 남성","segment":"false_color","signals":{"tokenized_terms":["블루","종","남성"]},"expected_reason_codes":["ENTITY_SPLIT"],"privacy":"synthetic"}
+{"query_id":"q029","query":"검은색 원피스","segment":"color","signals":{"intent_confidence":0.94},"expected_reason_codes":[],"privacy":"synthetic"}
+{"query_id":"q030","query":"골드바 10g","segment":"false_color","signals":{"negative_constraint_violations":0},"expected_reason_codes":[],"privacy":"synthetic"}
+{"query_id":"q031","query":"방수 운동화","segment":"low_performer","signals":{"zero_results":true},"expected_reason_codes":["ZERO_RESULTS"],"privacy":"synthetic"}
+{"query_id":"q032","query":"빅사이즈 린넨 셔츠","segment":"low_performer","signals":{"result_count":2},"expected_reason_codes":["LOW_RESULT_COUNT"],"privacy":"synthetic"}
+{"query_id":"q033","query":"당일배송 생수","segment":"low_performer","signals":{"missing_attributes":["당일배송"]},"expected_reason_codes":["ATTRIBUTE_RECALL_MISS"],"privacy":"synthetic"}
+{"query_id":"q034","query":"저당 단백질바","segment":"low_performer","signals":{"irrelevant_ratio_at_10":0.6},"expected_reason_codes":["LOW_PRECISION_AT_10"],"privacy":"synthetic"}
+{"query_id":"q035","query":"캠핑용 대용량 보조배터리","segment":"long_tail","signals":{"result_count":3},"expected_reason_codes":["LOW_RESULT_COUNT"],"privacy":"synthetic"}
+{"query_id":"q036","query":"호텔 수건 40수","segment":"long_tail","signals":{"exact_match_rank":6,"popularity_override":true},"expected_reason_codes":["EXACT_MATCH_DEMOTED","POPULARITY_OVERBOOST"],"privacy":"synthetic"}
+{"query_id":"q037","query":"임산부 카페인 없는 차","segment":"negative_constraint","signals":{"negative_constraint_violations":1},"expected_reason_codes":["NEGATIVE_CONSTRAINT_VIOLATION"],"privacy":"synthetic"}
+{"query_id":"q038","query":"반려견 미끄럼방지 매트","segment":"long_tail","signals":{"irrelevant_ratio_at_10":0.0},"expected_reason_codes":[],"privacy":"synthetic"}
+{"query_id":"q039","query":"소음 적은 제습기","segment":"long_tail","signals":{"result_count":1},"expected_reason_codes":["LOW_RESULT_COUNT"],"privacy":"synthetic"}
+{"query_id":"q040","query":"50대 여성 가을 출근룩","segment":"long_tail","signals":{"intent_confidence":0.48,"missing_attributes":["50대"]},"expected_reason_codes":["AMBIGUOUS_INTENT","ATTRIBUTE_RECALL_MISS"],"privacy":"synthetic"}

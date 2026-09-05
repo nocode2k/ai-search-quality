@@ -1,0 +1,940 @@
+{
+  "experiment": "single-vs-a2a-v1",
+  "limitations": [
+    "synthetic signals",
+    "in-process A2A transport",
+    "no LLM/token cost"
+  ],
+  "results": [
+    {
+      "architecture": "single",
+      "query_count": 40,
+      "reason_code_precision": 1.0,
+      "reason_code_recall": 1.0,
+      "reason_code_f1": 1.0,
+      "exact_match_rate": 1.0,
+      "degraded_query_rate": 0.0,
+      "fully_failed_query_rate": 0.0,
+      "agent_call_failure_rate": 0.0,
+      "latency_ms": {
+        "mean": 0.005,
+        "p95": 0.009,
+        "p99": 0.02
+      },
+      "rows": [
+        {
+          "query_id": "q001",
+          "expected": [
+            "EXACT_MATCH_DEMOTED",
+            "POPULARITY_OVERBOOST"
+          ],
+          "predicted": [
+            "EXACT_MATCH_DEMOTED",
+            "POPULARITY_OVERBOOST"
+          ],
+          "errors": [],
+          "latency_ms": 0.026
+        },
+        {
+          "query_id": "q002",
+          "expected": [
+            "BRAND_RECALL_MISS",
+            "ENTITY_SPLIT"
+          ],
+          "predicted": [
+            "BRAND_RECALL_MISS",
+            "ENTITY_SPLIT"
+          ],
+          "errors": [],
+          "latency_ms": 0.02
+        },
+        {
+          "query_id": "q003",
+          "expected": [],
+          "predicted": [],
+          "errors": [],
+          "latency_ms": 0.003
+        },
+        {
+          "query_id": "q004",
+          "expected": [],
+          "predicted": [],
+          "errors": [],
+          "latency_ms": 0.002
+        },
+        {
+          "query_id": "q005",
+          "expected": [
+            "EXACT_MATCH_DEMOTED"
+          ],
+          "predicted": [
+            "EXACT_MATCH_DEMOTED"
+          ],
+          "errors": [],
+          "latency_ms": 0.005
+        },
+        {
+          "query_id": "q006",
+          "expected": [
+            "LOW_PRECISION_AT_10"
+          ],
+          "predicted": [
+            "LOW_PRECISION_AT_10"
+          ],
+          "errors": [],
+          "latency_ms": 0.006
+        },
+        {
+          "query_id": "q007",
+          "expected": [
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "predicted": [
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "errors": [],
+          "latency_ms": 0.005
+        },
+        {
+          "query_id": "q008",
+          "expected": [
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "predicted": [
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "errors": [],
+          "latency_ms": 0.004
+        },
+        {
+          "query_id": "q009",
+          "expected": [
+            "NEGATIVE_CONSTRAINT_VIOLATION"
+          ],
+          "predicted": [
+            "NEGATIVE_CONSTRAINT_VIOLATION"
+          ],
+          "errors": [],
+          "latency_ms": 0.004
+        },
+        {
+          "query_id": "q010",
+          "expected": [],
+          "predicted": [],
+          "errors": [],
+          "latency_ms": 0.002
+        },
+        {
+          "query_id": "q011",
+          "expected": [
+            "AMBIGUOUS_INTENT"
+          ],
+          "predicted": [
+            "AMBIGUOUS_INTENT"
+          ],
+          "errors": [],
+          "latency_ms": 0.004
+        },
+        {
+          "query_id": "q012",
+          "expected": [],
+          "predicted": [],
+          "errors": [],
+          "latency_ms": 0.002
+        },
+        {
+          "query_id": "q013",
+          "expected": [
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "predicted": [
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "errors": [],
+          "latency_ms": 0.004
+        },
+        {
+          "query_id": "q014",
+          "expected": [
+            "NEGATIVE_CONSTRAINT_VIOLATION"
+          ],
+          "predicted": [
+            "NEGATIVE_CONSTRAINT_VIOLATION"
+          ],
+          "errors": [],
+          "latency_ms": 0.004
+        },
+        {
+          "query_id": "q015",
+          "expected": [
+            "POPULARITY_OVERBOOST"
+          ],
+          "predicted": [
+            "POPULARITY_OVERBOOST"
+          ],
+          "errors": [],
+          "latency_ms": 0.003
+        },
+        {
+          "query_id": "q016",
+          "expected": [
+            "SYNONYM_GAP"
+          ],
+          "predicted": [
+            "SYNONYM_GAP"
+          ],
+          "errors": [],
+          "latency_ms": 0.003
+        },
+        {
+          "query_id": "q017",
+          "expected": [],
+          "predicted": [],
+          "errors": [],
+          "latency_ms": 0.002
+        },
+        {
+          "query_id": "q018",
+          "expected": [
+            "SYNONYM_GAP"
+          ],
+          "predicted": [
+            "SYNONYM_GAP"
+          ],
+          "errors": [],
+          "latency_ms": 0.003
+        },
+        {
+          "query_id": "q019",
+          "expected": [
+            "SYNONYM_GAP"
+          ],
+          "predicted": [
+            "SYNONYM_GAP"
+          ],
+          "errors": [],
+          "latency_ms": 0.003
+        },
+        {
+          "query_id": "q020",
+          "expected": [
+            "NORMALIZATION_REQUIRED"
+          ],
+          "predicted": [
+            "NORMALIZATION_REQUIRED"
+          ],
+          "errors": [],
+          "latency_ms": 0.004
+        },
+        {
+          "query_id": "q021",
+          "expected": [
+            "NORMALIZATION_REQUIRED"
+          ],
+          "predicted": [
+            "NORMALIZATION_REQUIRED"
+          ],
+          "errors": [],
+          "latency_ms": 0.004
+        },
+        {
+          "query_id": "q022",
+          "expected": [
+            "NORMALIZATION_REQUIRED"
+          ],
+          "predicted": [
+            "NORMALIZATION_REQUIRED"
+          ],
+          "errors": [],
+          "latency_ms": 0.003
+        },
+        {
+          "query_id": "q023",
+          "expected": [
+            "MALFORMED_QUERY"
+          ],
+          "predicted": [
+            "MALFORMED_QUERY"
+          ],
+          "errors": [],
+          "latency_ms": 0.003
+        },
+        {
+          "query_id": "q024",
+          "expected": [
+            "MALFORMED_QUERY"
+          ],
+          "predicted": [
+            "MALFORMED_QUERY"
+          ],
+          "errors": [],
+          "latency_ms": 0.003
+        },
+        {
+          "query_id": "q025",
+          "expected": [],
+          "predicted": [],
+          "errors": [],
+          "latency_ms": 0.002
+        },
+        {
+          "query_id": "q026",
+          "expected": [
+            "LOW_PRECISION_AT_10"
+          ],
+          "predicted": [
+            "LOW_PRECISION_AT_10"
+          ],
+          "errors": [],
+          "latency_ms": 0.004
+        },
+        {
+          "query_id": "q027",
+          "expected": [
+            "ENTITY_SPLIT"
+          ],
+          "predicted": [
+            "ENTITY_SPLIT"
+          ],
+          "errors": [],
+          "latency_ms": 0.006
+        },
+        {
+          "query_id": "q028",
+          "expected": [
+            "ENTITY_SPLIT"
+          ],
+          "predicted": [
+            "ENTITY_SPLIT"
+          ],
+          "errors": [],
+          "latency_ms": 0.004
+        },
+        {
+          "query_id": "q029",
+          "expected": [],
+          "predicted": [],
+          "errors": [],
+          "latency_ms": 0.002
+        },
+        {
+          "query_id": "q030",
+          "expected": [],
+          "predicted": [],
+          "errors": [],
+          "latency_ms": 0.002
+        },
+        {
+          "query_id": "q031",
+          "expected": [
+            "ZERO_RESULTS"
+          ],
+          "predicted": [
+            "ZERO_RESULTS"
+          ],
+          "errors": [],
+          "latency_ms": 0.004
+        },
+        {
+          "query_id": "q032",
+          "expected": [
+            "LOW_RESULT_COUNT"
+          ],
+          "predicted": [
+            "LOW_RESULT_COUNT"
+          ],
+          "errors": [],
+          "latency_ms": 0.004
+        },
+        {
+          "query_id": "q033",
+          "expected": [
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "predicted": [
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "errors": [],
+          "latency_ms": 0.004
+        },
+        {
+          "query_id": "q034",
+          "expected": [
+            "LOW_PRECISION_AT_10"
+          ],
+          "predicted": [
+            "LOW_PRECISION_AT_10"
+          ],
+          "errors": [],
+          "latency_ms": 0.004
+        },
+        {
+          "query_id": "q035",
+          "expected": [
+            "LOW_RESULT_COUNT"
+          ],
+          "predicted": [
+            "LOW_RESULT_COUNT"
+          ],
+          "errors": [],
+          "latency_ms": 0.004
+        },
+        {
+          "query_id": "q036",
+          "expected": [
+            "EXACT_MATCH_DEMOTED",
+            "POPULARITY_OVERBOOST"
+          ],
+          "predicted": [
+            "EXACT_MATCH_DEMOTED",
+            "POPULARITY_OVERBOOST"
+          ],
+          "errors": [],
+          "latency_ms": 0.009
+        },
+        {
+          "query_id": "q037",
+          "expected": [
+            "NEGATIVE_CONSTRAINT_VIOLATION"
+          ],
+          "predicted": [
+            "NEGATIVE_CONSTRAINT_VIOLATION"
+          ],
+          "errors": [],
+          "latency_ms": 0.004
+        },
+        {
+          "query_id": "q038",
+          "expected": [],
+          "predicted": [],
+          "errors": [],
+          "latency_ms": 0.002
+        },
+        {
+          "query_id": "q039",
+          "expected": [
+            "LOW_RESULT_COUNT"
+          ],
+          "predicted": [
+            "LOW_RESULT_COUNT"
+          ],
+          "errors": [],
+          "latency_ms": 0.003
+        },
+        {
+          "query_id": "q040",
+          "expected": [
+            "AMBIGUOUS_INTENT",
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "predicted": [
+            "AMBIGUOUS_INTENT",
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "errors": [],
+          "latency_ms": 0.005
+        }
+      ]
+    },
+    {
+      "architecture": "a2a",
+      "query_count": 40,
+      "reason_code_precision": 1.0,
+      "reason_code_recall": 0.8286,
+      "reason_code_f1": 0.9062,
+      "exact_match_rate": 0.9,
+      "degraded_query_rate": 1.0,
+      "fully_failed_query_rate": 0.0,
+      "agent_call_failure_rate": 0.25,
+      "latency_ms": {
+        "mean": 0.117,
+        "p95": 0.175,
+        "p99": 0.247
+      },
+      "rows": [
+        {
+          "query_id": "q001",
+          "expected": [
+            "EXACT_MATCH_DEMOTED",
+            "POPULARITY_OVERBOOST"
+          ],
+          "predicted": [],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.491
+        },
+        {
+          "query_id": "q002",
+          "expected": [
+            "BRAND_RECALL_MISS",
+            "ENTITY_SPLIT"
+          ],
+          "predicted": [
+            "BRAND_RECALL_MISS",
+            "ENTITY_SPLIT"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.175
+        },
+        {
+          "query_id": "q003",
+          "expected": [],
+          "predicted": [],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.129
+        },
+        {
+          "query_id": "q004",
+          "expected": [],
+          "predicted": [],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.108
+        },
+        {
+          "query_id": "q005",
+          "expected": [
+            "EXACT_MATCH_DEMOTED"
+          ],
+          "predicted": [],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.108
+        },
+        {
+          "query_id": "q006",
+          "expected": [
+            "LOW_PRECISION_AT_10"
+          ],
+          "predicted": [
+            "LOW_PRECISION_AT_10"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.105
+        },
+        {
+          "query_id": "q007",
+          "expected": [
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "predicted": [
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.134
+        },
+        {
+          "query_id": "q008",
+          "expected": [
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "predicted": [
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.105
+        },
+        {
+          "query_id": "q009",
+          "expected": [
+            "NEGATIVE_CONSTRAINT_VIOLATION"
+          ],
+          "predicted": [
+            "NEGATIVE_CONSTRAINT_VIOLATION"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.099
+        },
+        {
+          "query_id": "q010",
+          "expected": [],
+          "predicted": [],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.091
+        },
+        {
+          "query_id": "q011",
+          "expected": [
+            "AMBIGUOUS_INTENT"
+          ],
+          "predicted": [
+            "AMBIGUOUS_INTENT"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.095
+        },
+        {
+          "query_id": "q012",
+          "expected": [],
+          "predicted": [],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.094
+        },
+        {
+          "query_id": "q013",
+          "expected": [
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "predicted": [
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.091
+        },
+        {
+          "query_id": "q014",
+          "expected": [
+            "NEGATIVE_CONSTRAINT_VIOLATION"
+          ],
+          "predicted": [
+            "NEGATIVE_CONSTRAINT_VIOLATION"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.098
+        },
+        {
+          "query_id": "q015",
+          "expected": [
+            "POPULARITY_OVERBOOST"
+          ],
+          "predicted": [],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.095
+        },
+        {
+          "query_id": "q016",
+          "expected": [
+            "SYNONYM_GAP"
+          ],
+          "predicted": [
+            "SYNONYM_GAP"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.092
+        },
+        {
+          "query_id": "q017",
+          "expected": [],
+          "predicted": [],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.112
+        },
+        {
+          "query_id": "q018",
+          "expected": [
+            "SYNONYM_GAP"
+          ],
+          "predicted": [
+            "SYNONYM_GAP"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.101
+        },
+        {
+          "query_id": "q019",
+          "expected": [
+            "SYNONYM_GAP"
+          ],
+          "predicted": [
+            "SYNONYM_GAP"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.092
+        },
+        {
+          "query_id": "q020",
+          "expected": [
+            "NORMALIZATION_REQUIRED"
+          ],
+          "predicted": [
+            "NORMALIZATION_REQUIRED"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.101
+        },
+        {
+          "query_id": "q021",
+          "expected": [
+            "NORMALIZATION_REQUIRED"
+          ],
+          "predicted": [
+            "NORMALIZATION_REQUIRED"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.091
+        },
+        {
+          "query_id": "q022",
+          "expected": [
+            "NORMALIZATION_REQUIRED"
+          ],
+          "predicted": [
+            "NORMALIZATION_REQUIRED"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.139
+        },
+        {
+          "query_id": "q023",
+          "expected": [
+            "MALFORMED_QUERY"
+          ],
+          "predicted": [
+            "MALFORMED_QUERY"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.095
+        },
+        {
+          "query_id": "q024",
+          "expected": [
+            "MALFORMED_QUERY"
+          ],
+          "predicted": [
+            "MALFORMED_QUERY"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.092
+        },
+        {
+          "query_id": "q025",
+          "expected": [],
+          "predicted": [],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.087
+        },
+        {
+          "query_id": "q026",
+          "expected": [
+            "LOW_PRECISION_AT_10"
+          ],
+          "predicted": [
+            "LOW_PRECISION_AT_10"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.247
+        },
+        {
+          "query_id": "q027",
+          "expected": [
+            "ENTITY_SPLIT"
+          ],
+          "predicted": [
+            "ENTITY_SPLIT"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.142
+        },
+        {
+          "query_id": "q028",
+          "expected": [
+            "ENTITY_SPLIT"
+          ],
+          "predicted": [
+            "ENTITY_SPLIT"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.108
+        },
+        {
+          "query_id": "q029",
+          "expected": [],
+          "predicted": [],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.096
+        },
+        {
+          "query_id": "q030",
+          "expected": [],
+          "predicted": [],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.099
+        },
+        {
+          "query_id": "q031",
+          "expected": [
+            "ZERO_RESULTS"
+          ],
+          "predicted": [
+            "ZERO_RESULTS"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.097
+        },
+        {
+          "query_id": "q032",
+          "expected": [
+            "LOW_RESULT_COUNT"
+          ],
+          "predicted": [
+            "LOW_RESULT_COUNT"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.095
+        },
+        {
+          "query_id": "q033",
+          "expected": [
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "predicted": [
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.091
+        },
+        {
+          "query_id": "q034",
+          "expected": [
+            "LOW_PRECISION_AT_10"
+          ],
+          "predicted": [
+            "LOW_PRECISION_AT_10"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.091
+        },
+        {
+          "query_id": "q035",
+          "expected": [
+            "LOW_RESULT_COUNT"
+          ],
+          "predicted": [
+            "LOW_RESULT_COUNT"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.139
+        },
+        {
+          "query_id": "q036",
+          "expected": [
+            "EXACT_MATCH_DEMOTED",
+            "POPULARITY_OVERBOOST"
+          ],
+          "predicted": [],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.101
+        },
+        {
+          "query_id": "q037",
+          "expected": [
+            "NEGATIVE_CONSTRAINT_VIOLATION"
+          ],
+          "predicted": [
+            "NEGATIVE_CONSTRAINT_VIOLATION"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.092
+        },
+        {
+          "query_id": "q038",
+          "expected": [],
+          "predicted": [],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.086
+        },
+        {
+          "query_id": "q039",
+          "expected": [
+            "LOW_RESULT_COUNT"
+          ],
+          "predicted": [
+            "LOW_RESULT_COUNT"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.091
+        },
+        {
+          "query_id": "q040",
+          "expected": [
+            "AMBIGUOUS_INTENT",
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "predicted": [
+            "AMBIGUOUS_INTENT",
+            "ATTRIBUTE_RECALL_MISS"
+          ],
+          "errors": [
+            "boosting:RuntimeError"
+          ],
+          "latency_ms": 0.098
+        }
+      ]
+    }
+  ]
+}
