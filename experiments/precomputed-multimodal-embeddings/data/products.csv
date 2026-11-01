@@ -1,0 +1,10 @@
+sku,title,description,in_stock,red,velvet,wood,gain_group
+A42,Armchair model A42,Comfortable lounge chair,true,0.00,0.00,0.10,red-velvet
+B17,Classic chair,Red velvet upholstery with oak legs,true,0.95,0.90,0.80,red-velvet
+C03,Desk lamp,Adjustable metal task light,true,0.00,0.00,0.00,none
+D88,Accent seat,Compact reading chair,true,0.88,0.92,0.72,red-velvet
+E11,Velvet ottoman,Blue footstool,true,0.00,0.70,0.15,none
+F09,Wood dining chair,Natural oak frame,false,0.05,0.00,0.95,wood-chair
+G21,Dining seat,Minimal kitchen furniture,true,0.02,0.00,0.90,wood-chair
+H14,Red office chair,Mesh ergonomic seat,true,0.80,0.00,0.05,none
+
