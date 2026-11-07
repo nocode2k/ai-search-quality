@@ -1,0 +1,13 @@
+id	explanation	evidence_quote	evidence_text	supported
+S01	저소음 상품입니다	소음이 적어 밤에도 사용하기 좋아요	리뷰: 소음이 적어 밤에도 사용하기 좋아요.	true
+S02	Java 역량이 있습니다	Java 17 Spring Boot	기술: JAVA 17 / Spring Boot	true
+S03	보온성이 좋습니다	겨울에도 따뜻하게 입었어요	후기: 겨울에도   따뜻하게 입었어요!	true
+S04	배송이 빠릅니다	주문 다음 날 도착	리뷰: '주문 다음 날 도착'해서 만족합니다.	true
+S05	가벼운 상품입니다	무게 890g	상품 정보: 무게 890g, 크기 30cm	true
+S06	세척이 쉽습니다	물로 쉽게 세척	사용 안내: 물로 쉽게 세척 가능합니다.	true
+U01	방수 상품입니다	완전 방수	생활 방수 기능을 제공합니다.	false
+U02	Java 역량이 있습니다	Java	기술: JavaScript, TypeScript	false
+U03	무료 반품입니다	무료 반품	반품 배송비 5,000원	false
+U04	배터리가 48시간 갑니다	48시간 연속 사용	최대 24시간 사용할 수 있습니다.	false
+U05	근거가 충분합니다	a	a 등급 상품	false
+U06	유기농 인증 상품입니다	유기농 인증	원산지: 국내산	false
