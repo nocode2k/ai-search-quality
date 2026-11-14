@@ -1,0 +1,11 @@
+# name	query	expected
+single term	battery	TERM(battery)
+case normalization	BATTERY	TERM(battery)
+and query	battery AND charger	TERM(battery) AND TERM(charger)
+or query	battery OR charger	TERM(battery) OR TERM(charger)
+negative term	battery NOT used	TERM(battery) NOT TERM(used)
+phrase	"electric vehicle"	PHRASE(electric vehicle)
+phrase and term	"electric vehicle" AND charger	PHRASE(electric vehicle) AND TERM(charger)
+prefix wildcard	batter*	TERM(batter*)
+grouped query	(battery OR charger) AND safety	( TERM(battery) OR TERM(charger) ) AND TERM(safety)
+group with negative	(battery OR charger) NOT used	( TERM(battery) OR TERM(charger) ) NOT TERM(used)
