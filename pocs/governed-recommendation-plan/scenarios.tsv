@@ -1,0 +1,11 @@
+# scenario	expected_valid	plan
+lexical-safe	true	s1=lexical_search(80)->;s2=catalog_filter(40)->s1;s3=package_results(30)->s2
+hybrid-rerank-safe	true	s1=lexical_search(80)->;s2=vector_search(120)->;s3=catalog_filter(40)->s1+s2;s4=rerank(150)->s3;s5=package_results(30)->s4
+hybrid-explanation-safe	true	s1=lexical_search(80)->;s2=vector_search(120)->;s3=catalog_filter(40)->s1+s2;s4=rerank(150)->s3;s5=generate_explanation(1500)->s4;s6=package_results(30)->s4+s5
+vector-safe	true	s1=vector_search(120)->;s2=catalog_filter(40)->s1;s3=package_results(30)->s2
+unknown-capability	false	s1=profile_export(40)->;s2=package_results(30)->s1
+timeout-over-budget	false	s1=vector_search(1000)->;s2=catalog_filter(40)->s1;s3=package_results(30)->s2
+cycle	false	s1=lexical_search(80)->s2;s2=catalog_filter(40)->s1;s3=package_results(30)->s2
+missing-dependency	false	s1=lexical_search(80)->;s2=catalog_filter(40)->missing;s3=package_results(30)->s2
+no-catalog-filter	false	s1=lexical_search(80)->;s2=package_results(30)->s1
+multiple-terminals	false	s1=lexical_search(80)->;s2=vector_search(120)->;s3=catalog_filter(40)->s1;s4=package_results(30)->s3
