@@ -1,0 +1,24 @@
+{
+  "baseline": {
+    "strategy": "naive",
+    "logicalOperations": 20,
+    "attempts": 60,
+    "sideEffects": 60,
+    "duplicateSideEffectRate": 2.0000,
+    "consistentResultRate": 0.0000,
+    "p95Millis": 5.123,
+    "p99Millis": 5.451
+  },
+  "experiment": {
+    "strategy": "idempotent",
+    "logicalOperations": 20,
+    "attempts": 60,
+    "sideEffects": 20,
+    "duplicateSideEffectRate": 0.0000,
+    "consistentResultRate": 1.0000,
+    "p95Millis": 9.489,
+    "p99Millis": 10.297
+  },
+  "notes": "Latency is measured locally per retry; it is not a production SLA."
+}
+
